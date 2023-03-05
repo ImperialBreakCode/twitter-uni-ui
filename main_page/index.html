@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../icons/css/all.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Twitter Main</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <nav>
+                    <a class="logo" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+
+                    <div class="nav-list">
+                        <ul>
+                            <li class="nv-main-active">
+                                <a href="#">
+                                    <div class="nav-icon">
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="nav-icon">
+                                        <i class="fa-solid fa-hashtag"></i>
+                                    </div>
+                                    <span>Explore</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="nav-icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button>Tweet</button>
+                    </div>
+
+                    <button class="logout-prf-btn">
+                        Log Out
+                    </button>
+                </nav>
+            </div>
+
+            <main class="col-9">
+                <section class="tweets-sec">
+                    <div class="page-heading">
+                        <h1>Home</h1>
+                        <div class="home-nav-btn">
+                            <a class="nv-active" href="#">For you</a>
+                            <a href="#">Following</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="tweet-list">
+
+                        <article class="tweet">
+                            <div class="main-tweet">
+                                <div class="left-profile">
+                                    <a href="#">
+                                        <img class="prf-pic" src="../images/pexels-jack.jpg" alt="prfp">
+                                    </a>
+                                    <div class="rep-line"></div>
+                                </div>
+
+                                <div class="right-content">
+                                    <div class="user-identity">
+                                        <a href="#">User One</a>
+                                        <p>@handle1</p>
+                                        <span>·</span>
+                                        <p>8h</p>
+                                    </div>
+                                    <div class="text-content">
+                                        Raining fire
+                                        <div class="image-content">
+                                            <img src="../images/raining-fire.png">
+                                        </div>
+                                    </div>
+                                    <div class="reactions">
+                                        <button id="comments" class="stat">
+                                            <i class="fa-regular fa-comment"></i>1000
+                                        </button>
+
+                                        <button id="retweets" class="stat">
+                                            <i class="fa-solid fa-retweet"></i>1000
+                                        </button>
+
+                                        <button id="likes" class="stat">
+                                            <i class="fa-regular fa-heart"></i>1000
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reply">
+                                <div class="left-profile">
+                                    <div class="rep-line rep-line-top"></div>
+                                    <a href="#">
+                                        <img class="prf-pic" src="../images/pexels-ruby-ruby.jpg" alt="prfp">
+                                    </a>
+                                </div>
+
+                                <div class="right-content">
+                                    <div class="user-identity">
+                                        <a href="#">User Two</a>
+                                        <p>@hand</p>
+                                        <span>·</span>
+                                        <p>2h</p>
+                                    </div>
+                                    <div class="text-content">Text Text Text Text</div>
+                                    <div class="reactions">
+                                        <button id="comments" class="stat">
+                                            <i class="fa-regular fa-comment"></i>200
+                                        </button>
+
+                                        <button id="retweets" class="stat">
+                                            <i class="fa-solid fa-retweet"></i>1500
+                                        </button>
+
+                                        <button id="likes" class="stat">
+                                            <i class="fa-regular fa-heart"></i>2000
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="tweet">
+                            <div class="main-tweet">
+                                <div class="left-profile">
+                                    <a href="#">
+                                        <img class="prf-pic" src="../images/pexels-jack.jpg" alt="prfp">
+                                    </a>
+                                </div>
+
+                                <div class="right-content">
+                                    <div class="user-identity">
+                                        <a href="#">User One</a>
+                                        <p>@handle1</p>
+                                        <span>·</span>
+                                        <p>8h</p>
+                                    </div>
+                                    <div class="text-content">Text Text Text</div>
+                                    <div class="reactions">
+                                        <button id="comments" class="stat">
+                                            <i class="fa-regular fa-comment"></i>1000
+                                        </button>
+
+                                        <button id="retweets" class="stat">
+                                            <i class="fa-solid fa-retweet"></i>1000
+                                        </button>
+
+                                        <button id="likes" class="stat">
+                                            <i class="fa-regular fa-heart"></i>1000
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="tweet">
+                            <div class="main-tweet">
+                                <div class="left-profile">
+                                    <a href="#">
+                                        <img class="prf-pic" src="../images/pexels-jack.jpg" alt="prfp">
+                                    </a>
+                                    <div class="rep-line"></div>
+                                </div>
+
+                                <div class="right-content">
+                                    <div class="user-identity">
+                                        <a href="#">User One</a>
+                                        <p>@handle1</p>
+                                        <span>·</span>
+                                        <p>8h</p>
+                                    </div>
+                                    <div class="text-content">Text Text Text</div>
+                                    <div class="reactions">
+                                        <button id="comments" class="stat">
+                                            <i class="fa-regular fa-comment"></i>1000
+                                        </button>
+
+                                        <button id="retweets" class="stat">
+                                            <i class="fa-solid fa-retweet"></i>1000
+                                        </button>
+
+                                        <button id="likes" class="stat">
+                                            <i class="fa-regular fa-heart"></i>1000
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reply">
+                                <div class="left-profile">
+                                    <div class="rep-line rep-line-top"></div>
+                                    <a href="#">
+                                        <img class="prf-pic" src="../images/pexels-ruby-ruby.jpg" alt="prfp">
+                                    </a>
+                                    <div class="rep-line"></div>
+                                </div>
+
+                                <div class="right-content">
+                                    <div class="user-identity">
+                                        <a href="#">User Two</a>
+                                        <p>@hand</p>
+                                        <span>·</span>
+                                        <p>2h</p>
+                                    </div>
+                                    <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Fusce odio lectus, congue eget maximus a, suscipit in enim. Duis egestas sapien
+                                        dui. Quisque porttitor semper fermentum. Etiam quis venenatis lectus, vel
+                                        ullamcorper dui. Etiam aliquam massa vel vulputate dictum. Praesent nisl massa,
+                                        venenatis quis tristique non, vehicula non nisl. Vestibulum id consequat diam.
+                                        Integer a laoreet est.</div>
+                                    <div class="reactions">
+                                        <button id="comments" class="stat">
+                                            <i class="fa-regular fa-comment"></i>200
+                                        </button>
+
+                                        <button id="retweets" class="stat">
+                                            <i class="fa-solid fa-retweet"></i>1500
+                                        </button>
+
+                                        <button id="likes" class="stat">
+                                            <i class="fa-regular fa-heart"></i>2000
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reply">
+                                <div class="left-profile">
+                                    <div class="rep-line rep-line-top"></div>
+                                    <a href="#">
+                                        <img class="prf-pic" src="../images/pexels-ruby-ruby.jpg" alt="prfp">
+                                    </a>
+                                </div>
+
+                                <div class="right-content">
+                                    <div class="user-identity">
+                                        <a href="#">User Two</a>
+                                        <p>@hand</p>
+                                        <span>·</span>
+                                        <p>2h</p>
+                                    </div>
+                                    <div class="text-content">Text Text Text Text</div>
+                                    <div class="reactions">
+                                        <button id="comments" class="stat">
+                                            <i class="fa-regular fa-comment"></i>200
+                                        </button>
+
+                                        <button id="retweets" class="stat">
+                                            <i class="fa-solid fa-retweet"></i>1500
+                                        </button>
+
+                                        <button id="likes" class="stat">
+                                            <i class="fa-regular fa-heart"></i>2000
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <section class="right-sec">
+                    <input type="text" placeholder="Search...">
+
+                    <div class="trending">
+                        <h3>Trending</h3>
+                        <a href="#">1. Tag</a>
+                        <a href="#">2. Tag</a>
+                        <a href="#">3. Tag</a>
+                        <a href="#">4. Tag</a>
+                        <a class="see-all" href="#">See all</a>
+                    </div>
+
+                    <div class="profiles">
+                        <h3>Who to follow</h3>
+                        <a href="#">
+                            <img src="../images/pexels-jack.jpg">
+                            <span>
+                                <p>User One</p>
+                                @handle1
+                            </span>
+                            <button>Follow</button>
+                        </a>
+                        <a href="#">
+                            <img src="../images/pexels-ruby-ruby.jpg">
+                            <span>
+                                <p>User Two</p>
+                                @hand
+                            </span>
+                            <button>Follow</button>
+                        </a>
+                        <a class="see-all" href="#">See all</a>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
