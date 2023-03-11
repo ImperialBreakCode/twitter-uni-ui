@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 .page-heading {
-  background-color: rgba(29, 95, 112, 0.7058823529);
-  padding: 15px 30px;
+  background-color: rgba(29, 95, 112, 0.7921568627);
+  padding: 20px 30px;
   border-radius: 20px;
   position: sticky;
   top: 3vh;
@@ -9,14 +9,52 @@
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   box-shadow: -1px 9px 20px rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .page-heading h1 {
-  margin-top: 20px;
+  margin: 0;
   font-size: 26px;
+}
+.page-heading a {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  transition: 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.page-heading a span {
+  display: inline-block;
+  margin-left: 10px;
+  width: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.page-heading a:hover {
+  background-color: rgba(0, 0, 0, 0.3098039216);
+}
+.page-heading a:hover span {
+  width: 48px;
+  opacity: 1;
 }
 
 #current-tweet {
   padding: 25px;
+}
+#current-tweet .stats {
+  padding: 10px 0;
+  font-size: 16px;
+  border-top: 1px solid rgba(172, 172, 172, 0.5);
+  border-bottom: 1px solid rgba(172, 172, 172, 0.5);
+}
+#current-tweet .stat-count {
+  margin-right: 20px;
+}
+#current-tweet .stat span {
+  font-weight: 300;
+  color: #acacac;
 }
 
 .tweet-header a {
@@ -71,4 +109,8 @@
   color: white !important;
   font-size: 17px;
   font-weight: 600;
+}
+
+.right-sec input {
+  position: static;
 }/*# sourceMappingURL=tweet_styles.css.map */

@@ -162,54 +162,54 @@ main {
 .tweet-list .tweet .right-content .user-identity span {
   padding: 0 5px;
 }
-.tweet-list .tweet .right-content .reactions {
+.tweet-list .tweet .stat {
+  transition: 0.2s;
+}
+.tweet-list .tweet .stat i {
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.tweet-list .tweet .stat:hover i {
+  background-color: grey;
+}
+.tweet-list .tweet .reactions {
   margin-top: 10px;
   margin-right: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.tweet-list .tweet .right-content .stat {
-  transition: 0.2s;
-}
-.tweet-list .tweet .right-content .stat i {
-  padding: 10px;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-.tweet-list .tweet .right-content .stat:hover i {
-  background-color: grey;
-}
-.tweet-list .tweet .right-content #likes:hover {
+.tweet-list .tweet #likes:hover {
   color: #fa445c;
 }
-.tweet-list .tweet .right-content #likes:hover i {
+.tweet-list .tweet #likes:hover i {
   color: #fa445c;
   background-color: rgba(250, 68, 92, 0.2);
 }
-.tweet-list .tweet .right-content #comments:hover {
+.tweet-list .tweet #comments:hover {
   color: #2dc7ff;
 }
-.tweet-list .tweet .right-content #comments:hover i {
+.tweet-list .tweet #comments:hover i {
   color: #2dc7ff;
   background-color: rgba(45, 199, 255, 0.2);
 }
-.tweet-list .tweet .right-content #retweets i {
+.tweet-list .tweet #retweets i {
   padding: 10px 9px;
 }
-.tweet-list .tweet .right-content #retweets:hover {
+.tweet-list .tweet #retweets:hover {
   color: #44fa5c;
 }
-.tweet-list .tweet .right-content #retweets:hover i {
+.tweet-list .tweet #retweets:hover i {
   color: #44fa5c;
   background-color: rgba(68, 250, 92, 0.2);
 }
-.tweet-list .tweet .right-content .reactions button, .tweet-list .tweet .right-content .reactions i {
+.tweet-list .tweet .reactions button, .tweet-list .tweet .reactions i {
   background: none;
   border: none;
   color: #c2c2c2;
 }
-.tweet-list .tweet .right-content .reactions i {
+.tweet-list .tweet .reactions i {
   margin: 0 10px;
 }
 .tweet-list .tweet .image-content {

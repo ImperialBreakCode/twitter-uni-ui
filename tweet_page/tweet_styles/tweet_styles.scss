@@ -1,26 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 $box-color: #143f4aa2;
+$grey-text: #acacac;
 $box-radius: 20px;
 
 .page-heading{
-    background-color: #1d5f70b4;
-    padding: 15px 30px;
+    background-color: #1d5f70ca;
+    padding: 20px 30px;
     border-radius: $box-radius;
     position: sticky;
     top: 3vh;
     z-index: 10;
     backdrop-filter: blur(20px);
     box-shadow: -1px 9px 20px #0000001a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     
     h1{
-        margin-top: 20px;
+        margin: 0;
         font-size: 26px;
+    }
+
+    a{
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 5px 10px;
+        transition: 0.3s;
+        border-radius: 10px;
+        overflow: hidden;
+
+        span{
+            display: inline-block;
+            margin-left: 10px;
+            width: 0;
+            transition: 0.3s;
+            opacity: 0;
+        }
+
+        &:hover{
+            background-color: #0000004f;
+
+            span{
+                width: 48px;
+                opacity: 1;
+            }
+        }    
     }
 }
 
 #current-tweet{
     padding: 25px;
+
+    .stats{
+        padding: 10px 0;
+        font-size: 16px;
+        border-top: 1px solid transparentize($color: $grey-text, $amount: 0.5);
+        border-bottom: 1px solid transparentize($color: $grey-text, $amount: 0.5);
+    }
+
+    .stat-count{
+        margin-right: 20px;
+    }
+
+    .stat span{
+        font-weight: 300;
+        color: $grey-text;
+    }
 }
 
 .tweet-header{
@@ -45,7 +91,7 @@ $box-radius: 20px;
 
     p{
         margin: 0;
-        color: #acacac;
+        color: $grey-text;
     }
 }
 
@@ -72,7 +118,7 @@ $box-radius: 20px;
 }
 
 .time-posted{
-    color: #acacac;
+    color: $grey-text;
     font-size: 17px;
     font-weight: 300;
 }
@@ -85,4 +131,8 @@ $box-radius: 20px;
     color: white!important;
     font-size: 17px;
     font-weight: 600;
+}
+
+.right-sec input{
+    position: static;
 }
