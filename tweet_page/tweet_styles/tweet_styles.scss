@@ -3,6 +3,8 @@
 $box-color: #143f4aa2;
 $grey-text: #acacac;
 $box-radius: 20px;
+$button-backgr: #2e87c6;
+$button-hover: #3597dc;
 
 .page-heading{
     background-color: #1d5f70ca;
@@ -63,9 +65,31 @@ $box-radius: 20px;
         margin-right: 20px;
     }
 
-    .stat span{
+    .stat-count span{
         font-weight: 300;
         color: $grey-text;
+    }
+}
+
+.tweet-list .tweet-reply{
+    margin: 20px;
+    background: transparent;
+    
+    .main-tweet{
+        padding: 20px 0;
+        cursor: default;
+
+        &:hover{
+            background: transparentize($color: $box-color, $amount: 0.3);
+        }
+    }
+
+    .reactions{
+        margin-right: 0;
+    }
+
+    i{
+        margin-left: 0!important;
     }
 }
 
@@ -135,4 +159,40 @@ $box-radius: 20px;
 
 .right-sec input{
     position: static;
+}
+
+.reply-input-box{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+
+    input{
+        background-color: #0000001a;
+        border: 2px solid transparentize($color: $box-color, $amount: 0.1);
+        padding: 10px 20px;
+        border-radius: 50px;
+        width: 83%;
+        transition: 0.2s;
+
+        &:hover{
+            background: transparentize($color: $box-color, $amount: 0.3);
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    button{
+        background-color: $button-backgr;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        transition: 0.2s;
+        margin-left: auto;
+
+        &:hover{
+            background: $button-hover;
+        }
+    }
 }

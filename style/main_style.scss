@@ -2,6 +2,8 @@
 
 $box-color: #143f4aa2;
 $box-radius: 20px;
+$button-backgr: #2e87c6;
+$button-hover: #3597dc;
 
 *{
     margin: 0;
@@ -31,7 +33,10 @@ nav{
     .logo{
         font-size: 30px;
         font-weight: 600;
-        color: #3aadff;
+
+        span{
+            color: #3aadff;
+        }  
     }
 
     .nav-list{
@@ -62,7 +67,7 @@ nav{
         }
 
         .nv-main-active span, .nv-main-active i{
-            color: #50b6ff;
+            color: #61bdff;
         }
 
         .nav-icon{
@@ -70,7 +75,7 @@ nav{
         }
 
         button{
-            background: #2e87c6;
+            background: $button-backgr;
             font-size: 20px;
             padding: 10px 0;
             border-radius: 50px;
@@ -79,7 +84,7 @@ nav{
             transition: 0.2s;
 
             &:hover{
-                background: #3597dc;
+                background: $button-hover;
             }
         }
     }
@@ -96,6 +101,12 @@ nav{
 
         &:hover{
             background-color: #165163;
+        }
+    }
+
+    @media (max-width: 1200px){
+        span{
+            display: none;
         }
     }
 }
@@ -290,21 +301,15 @@ main{
 .right-sec{
     margin-left: 25px;
     width: calc(35% - 25px);
+}
 
-    input{
-        position: sticky;
-        top: 3vh;
+@media (max-width: 992px) {
+    .right-sec{
+        display: none;
+    }
+
+    .tweets-sec{
         width: 100%;
-        padding: 8px 20px;
-        border-radius: 50px;
-        background-color: #134a5b;
-        border: 1px solid transparent;
-        transition: 0.2s;
-
-        &:focus{
-            border: 1px solid #227f9b;
-            outline: none;
-        }
     }
 }
 

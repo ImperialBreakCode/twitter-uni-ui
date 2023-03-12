@@ -52,9 +52,27 @@
 #current-tweet .stat-count {
   margin-right: 20px;
 }
-#current-tweet .stat span {
+#current-tweet .stat-count span {
   font-weight: 300;
   color: #acacac;
+}
+
+.tweet-list .tweet-reply {
+  margin: 20px;
+  background: transparent;
+}
+.tweet-list .tweet-reply .main-tweet {
+  padding: 20px 0;
+  cursor: default;
+}
+.tweet-list .tweet-reply .main-tweet:hover {
+  background: rgba(20, 63, 74, 0.3352941176);
+}
+.tweet-list .tweet-reply .reactions {
+  margin-right: 0;
+}
+.tweet-list .tweet-reply i {
+  margin-left: 0 !important;
 }
 
 .tweet-header a {
@@ -113,4 +131,35 @@
 
 .right-sec input {
   position: static;
+}
+
+.reply-input-box {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+}
+.reply-input-box input {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  border: 2px solid rgba(20, 63, 74, 0.5352941176);
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: 83%;
+  transition: 0.2s;
+}
+.reply-input-box input:hover {
+  background: rgba(20, 63, 74, 0.3352941176);
+}
+.reply-input-box input:focus {
+  outline: none;
+}
+.reply-input-box button {
+  background-color: #2e87c6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin-left: auto;
+}
+.reply-input-box button:hover {
+  background: #3597dc;
 }/*# sourceMappingURL=tweet_styles.css.map */

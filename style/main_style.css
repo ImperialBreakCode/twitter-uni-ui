@@ -27,6 +27,8 @@ nav {
 nav .logo {
   font-size: 30px;
   font-weight: 600;
+}
+nav .logo span {
   color: #3aadff;
 }
 nav .nav-list {
@@ -53,7 +55,7 @@ nav .nav-list li a:hover {
   background: #2e3e42;
 }
 nav .nav-list .nv-main-active span, nav .nav-list .nv-main-active i {
-  color: #50b6ff;
+  color: #61bdff;
 }
 nav .nav-list .nav-icon {
   width: 50px;
@@ -82,6 +84,11 @@ nav .logout-prf-btn {
 }
 nav .logout-prf-btn:hover {
   background-color: #165163;
+}
+@media (max-width: 1200px) {
+  nav span {
+    display: none;
+  }
 }
 
 main {
@@ -231,21 +238,15 @@ main {
   margin-left: 25px;
   width: calc(35% - 25px);
 }
-.right-sec input {
-  position: sticky;
-  top: 3vh;
-  width: 100%;
-  padding: 8px 20px;
-  border-radius: 50px;
-  background-color: #134a5b;
-  border: 1px solid transparent;
-  transition: 0.2s;
-}
-.right-sec input:focus {
-  border: 1px solid #227f9b;
-  outline: none;
-}
 
+@media (max-width: 992px) {
+  .right-sec {
+    display: none;
+  }
+  .tweets-sec {
+    width: 100%;
+  }
+}
 .trending, .profiles {
   background-color: rgba(20, 63, 74, 0.6352941176);
   border-radius: 20px;
