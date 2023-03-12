@@ -30,6 +30,10 @@ nav{
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 1200px) {
+        align-items: center;
+    }
+
     .logo{
         font-size: 30px;
         font-weight: 600;
@@ -87,6 +91,24 @@ nav{
                 background: $button-hover;
             }
         }
+
+        @media (max-width: 1200px){
+            width: 100%;
+
+            .nav-icon{
+                width: 100%;
+                text-align: center;
+            }
+
+            li a{
+                padding: 10% 0;
+            }
+
+            i{
+                display: inline-block!important;
+                font-size: 20px;
+            }
+        }
     }
 
     .logout-prf-btn{
@@ -108,6 +130,11 @@ nav{
         span{
             display: none;
         }
+
+        button{
+            padding: 6px 4px!important;
+            width: 100%;
+        }   
     }
 }
 
@@ -278,12 +305,11 @@ main{
             }
 
         .image-content{
-            height: 60vh;
             width: 100%;
             margin: 10px 0;
 
             img{
-                max-height: 100%;
+                max-height: 60vh;
                 max-width: 100%;
                 border-radius: 20px;
             }
@@ -303,6 +329,16 @@ main{
     width: calc(35% - 25px);
 }
 
+@media (max-width: 1400px) {
+    .right-sec{
+        width: calc(40% - 25px);
+    }
+
+    .tweets-sec{
+        width: 60%;
+    }
+}
+
 @media (max-width: 992px) {
     .right-sec{
         display: none;
@@ -310,6 +346,37 @@ main{
 
     .tweets-sec{
         width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .main-tweet{
+        padding-top: 8px!important;
+    }
+
+    .text-content{
+        font-size: 14px!important;
+    }
+
+    .left-profile{
+        padding: 0 4px!important;
+        width: 55px!important;
+    }
+
+    .tweets-sec{
+        width: 100%;
+    }
+
+    .reactions{
+        margin: 0!important;
+        font-size: 12px!important;
+
+        .stat i{
+            margin: 0 5px!important;
+            margin-top: 5px!important;
+            padding: 5px!important;
+        }
     }
 }
 
